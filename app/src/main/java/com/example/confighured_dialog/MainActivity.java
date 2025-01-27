@@ -49,7 +49,11 @@ public class MainActivity extends AppCompatActivity {
         mainLayout = findViewById(R.id.mainLayout);
     }
 
-
+    /**
+     *  the first  click for button1. Display the color we choose  .
+     *
+     * @param view button .
+     */
     public void clicked1(View view) {
         adb = new AlertDialog.Builder(this);
         adb.setTitle("random message");
@@ -79,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog ad = adb.create();
         ad.show();
     }
+    /**
+     *  the second  click for button2.Display the color we choose after we clicked ok   .
+     *
+     * @param view button .
+     */
+
 
     public void clicked2(View view) {
         adb = new AlertDialog.Builder(this);
@@ -123,29 +133,21 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog ad = adb.create();
         ad.show();
     }
+    /**
+     *  the third  click for button2.reset the background (white )    .
+     *
+     * @param view button .
+     */
 
     public void clicked3(View view )
     {
-        adb = new AlertDialog.Builder(this);
-        adb.setTitle("random message");
-        adb.setMessage("hello");
-
-
-        adb = new AlertDialog.Builder(/* context: */ this);
-
-        adb.setTitle("List of colors - multi choice");
-
-        adb.setNegativeButton("reset", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mainLayout.setBackgroundColor(Color.WHITE);
-            }
-        });
-        adb.setCancelable(false);
-        AlertDialog ad = adb.create();
-        ad.show();
+        mainLayout.setBackgroundColor(Color.WHITE);
     }
-
+    /**
+     *  the third  click for button2.its ask the user to write a random word and after that is print that .    .
+     *
+     * @param view button .
+     */
     public void clicked4(View view )
     {
 
